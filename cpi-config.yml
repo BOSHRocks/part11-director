@@ -1,0 +1,16 @@
+cpis:
+- name: lab
+  type: vsphere
+  properties:
+    host: 192.168.192.123
+    user: administrator@vsphere.local
+    password: P@ssw0rd
+    datacenters:
+    - clusters:
+      - {cluster: {}}
+      datastore_pattern: ^(ssd01|ssd02|ssd03|intel01|intel02|intel03)$
+      disk_path: tutorial-disks
+      name: Datacenter
+      persistent_datastore_pattern: ^(ssd01|ssd02|ssd03|intel01|intel02|intel03)$
+      template_folder: tutorial-templates
+      vm_folder: tutorial-vms

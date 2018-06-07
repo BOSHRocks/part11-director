@@ -1,0 +1,11 @@
+networks:
+- name: labnet
+  type: manual
+  subnets:
+  - range: 192.168.192.0/24
+    gateway: 192.168.192.1
+    reserved: [ 192.168.192.1-192.168.192.200, 192.168.192.220-192.168.192.254]
+    az: az1
+    dns: [8.8.8.8]
+    cloud_properties:
+      name: "VM Network"
