@@ -10,7 +10,7 @@ vm_types:
   cloud_properties:
     cpu: 2
     ram: 1024
-    disk: 3240
+    disk: 10240 
 - name: large
   cloud_properties:
     cpu: 2
